@@ -9,6 +9,9 @@
     "build": "webpack",
     "postinstall": "npm run build"
   },
+  "engines": {
+    "node": "5.3.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/thojan02/my-first-jsp-app.git"
