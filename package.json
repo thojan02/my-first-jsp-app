@@ -40,5 +40,11 @@
       "es2015",
       "react"
     ]
+  },
+  "scripts": {
+    "develop": "node_modules/.bin/webpack-dev-server --content-base public --port 3000",
+    "start": "node start.js",
+    "build": "webpack",
+    "postinstall": "npm run build"
   }
 }
