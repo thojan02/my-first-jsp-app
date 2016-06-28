@@ -15,9 +15,16 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+  module: {
+    loaders: [{
+      test: /\.jsx?$/,
+      loaders: ['babel'], // ['babel-loader'] also works
+      exclude: /node_modules/,
+    }]
+  },
   plugins: [new HtmlWebpackPlugin({
-    title: 'My First React App', // set a custom title
-    header: 'Welcome to my first react app!', //added a custom header
+    title: 'My React App', // set a custom title
+    text: 'This is some random text I added for fun....', //set custom ingress text
     template: 'index.template.html', // use our custom template
     inject: 'body' // inject our bundled script into the body
   })]
