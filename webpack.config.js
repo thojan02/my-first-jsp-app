@@ -17,6 +17,7 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     title: 'My First React App', // set a custom title
+    header: 'Welcome to my first react app!', //added a custom header
     template: 'index.template.html', // use our custom template
     inject: 'body' // inject our bundled script into the body
   })]
