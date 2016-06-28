@@ -2,6 +2,7 @@
 My first jsp app with npm, webpack, node etc.
 
 Run instructions:
+
 1. To run with webpack dev server [localhost:3000](http://localhost:3000):
   > `>> npm run develop`
 
