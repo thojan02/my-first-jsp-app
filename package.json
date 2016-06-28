@@ -1,0 +1,25 @@
+{
+  "name": "my-first-jsp-app",
+  "version": "1.0.0",
+  "description": "This is my first jsp app",
+  "main": "index.js",
+  "scripts": {
+    "test": "my-first-app-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thojan02/my-first-jsp-app.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "webpack",
+    "first"
+  ],
+  "author": "Jan-Anders Thorsveen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thojan02/my-first-jsp-app/issues"
+  },
+  "homepage": "https://github.com/thojan02/my-first-jsp-app#readme"
+}
