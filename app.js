@@ -8,6 +8,7 @@ const serveStatic = require('serve-static');
 
 const app = express();
 const port = process.env.PORT || 8080;
+const env = process.env.NODE_ENV || "develop";
 
 // Use this middleware to server up static files built into /public
 app.use(serveStatic(path.join(__dirname, 'public')));
@@ -15,4 +16,5 @@ app.use(serveStatic(path.join(__dirname, 'public')));
 // attach to port
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
+    console.log(`Running in mode ${env}`)
 });
