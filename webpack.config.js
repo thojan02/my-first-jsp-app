@@ -1,4 +1,3 @@
-```js
 /**
  * /webpack.config.js
  */
@@ -16,4 +15,3 @@ module.exports = {
     filename: 'bundle.js'
   },
 };
-```
