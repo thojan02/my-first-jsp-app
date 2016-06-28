@@ -15,5 +15,9 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
-  plugins: [new HtmlWebpackPlugin()]
+  plugins: [new HtmlWebpackPlugin({
+    title: 'My First React App', // set a custom title
+    template: 'index.template.html', // use our custom template
+    inject: 'body' // inject our bundled script into the body
+  })]
 };
