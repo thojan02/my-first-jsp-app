@@ -4,6 +4,7 @@
 #Bundle output directory
 **/public/*.js
 **/public/*.map
+**/public/*.svg
 **/public/index.html
 
 # Compiled source

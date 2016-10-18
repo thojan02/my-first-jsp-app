@@ -46,15 +46,22 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loaders: ['react-hot', 'babel'], // ['babel-loader'] also works
-      exclude: /node_modules/,
-    }]
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['react-hot', 'babel'], // ['babel-loader'] also works
+        exclude: /node_modules/
+      },
+      {
+        test: /\.jpg?g$|\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
+        loader: "file",
+        exclude: /node_modules/
+      }
+    ]
   },
   plugins: [new HtmlWebpackPlugin({
     title: 'My React App', // set a custom title
-    text: 'This is some random text I added for fun....', //set custom ingress text
+    text: 'This is an ingress text added via webpack config and template', //set custom ingress text
     template: 'index.template.html', // use our custom template
     inject: 'body' // inject our bundled script into the body
   })]
